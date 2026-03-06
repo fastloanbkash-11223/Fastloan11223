@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ফাস্ট লোন আবেদন</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: goldenrod;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 15px 0;
+        }
+        nav a {
+            color: green;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid green;
+            margin-right: 10px;
+        }
+        nav a:hover {
+            background: green;
+            color: #fff;
+        }
+        .form-section {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: goldenrod;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ফাস্টলোন আবেদন ও ব্যবহারব্যবস্থা</h1>
+    </header>
+
+    <div class="container">
+        <nav>
+            <a href="#apply">অ্যাবেদন করুন</a>
+            <a href="#withdraw">পূর্ববর্তী লোন তোলুন</a>
+            <a href="#balance">ব্যালেন্স দেখুন</a>
+            <a href="#transactions">লেনদেনের ইতিহাস</a>
+            <a href="#admin">অ্যাডমিন প্যানেল</a>
+        </nav>
+
+        <section class="form-section" id="apply">
+            <h2>লোন আবেদন করুন</h2>
+            <form>
+                <label for="name">নাম:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="amount">লোনের পরিমাণ:</label><br>
+                <input type="number" id="amount" name="amount"><br>
+                <input type="submit" value="জমা দিন">
+            </form>
+        </section>
+
+        <section class="form-section" id="withdraw">
+            <h2>লোন তোলুন</h2>
+            <form>
+                <label for="withdrawAmount">অতিরিক্ত পরিমাণ:</label><br>
+                <input type="number" id="withdrawAmount" name="withdrawAmount"><br>
+                <input type="submit" value="তোলুন">
+            </form>
+        </section>
+
+        <section class="form-section" id="balance">
+            <h2>ব্যালেন্স</h2>
+            <p>আপনার বর্তমান ব্যালেন্স: <strong>৳ 0.00</strong></p>
+        </section>
+
+        <section class="form-section" id="transactions">
+            <h2>লেনদেনের ইতিহাস</h2>
+            <ul>
+                <li>লেনদেন ১</li>
+                <li>লেনদেন ২</li>
+            </ul>
+        </section>
+
+        <section class="form-section" id="admin">
+            <h2>অ্যাডমিন প্যানেল</h2>
+            <form>
+                <label for="adminUser">ব্যবহারকারীর নাম:</label><br>
+                <input type="text" id="adminUser" name="adminUser"><br>
+                <label for="adminPassword">পাসওয়ার্ড:</label><br>
+                <input type="password" id="adminPassword" name="adminPassword"><br>
+                <input type="submit" value="লগইন">
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 ফাস্টলোন. সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+</body>
+</html>
